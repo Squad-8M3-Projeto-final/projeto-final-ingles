@@ -26,10 +26,20 @@ position: fixed;
 top: 0;
  left: 0;
 width: 100%;
-padding: 20px 90px;
+padding: 20px 100px;
  background: #000000;
 }
+.nav-list ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+ 
 
+}
 .nav-list{
     display: flex;
     /* letter-spacing: 3px;
@@ -39,7 +49,7 @@ padding: 20px 90px;
     
 
 nav {
-    color: #fef191;
+    color: #e8cc1a;
 
     display: flex;
     justify-content: space-around;
@@ -48,9 +58,20 @@ nav {
     
 }
 
+.principal nav {
+    display: flex;
+    justify-content: 
+    height 70px;
+    width: 100%;
+    ;
+    
+}
 
-
-
+.principal nav .name {
+    color: #f4f0ec;
+    
+    font-size: 20px;
+}
 .login{
     width:50px;
     height: 50px;
@@ -62,7 +83,10 @@ nav {
 
 }
 
-
+.h1{
+    font-family: 'Dela Gothic One', sans-serif;
+    color: #f6f6f5;
+}
 nav ul li a{
     color:white;
 }
@@ -86,7 +110,12 @@ nav ul li a{
     flex-wrap: wrap;
 }
 
-
+#services {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    
+}
 button{
     background-color: #EBDA4C;
     margin-top:10px;
@@ -131,9 +160,6 @@ button{
     display: flex;
      color: #f6f6f5;    display: flex;
     
-}
-.active{
-    margin-top: 10px;
 }
 
 .box {
@@ -192,7 +218,18 @@ button:hover {
     background-color: #f1b671;
     border-radius: 50%;
 } */
-
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+ }
+ .mobile-menu div{
+     width: 32px;
+     height: 2px;
+     background-color: #fff;
+     margin: 8px;
+     transition: 0.3s;
+ }
+      
 
       
       @media (max-width: 999px) {
