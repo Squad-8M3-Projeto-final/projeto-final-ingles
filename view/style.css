@@ -68,6 +68,19 @@ body {
 .div-botao-intuito-pagina button:hover {
     background-color: rgb(180, 108, 0);
     color: white;
+    border-style: none;
+}
+
+.div-botao-intuito-pagina button:active {
+    background-color: rgb(0, 6, 180);
+    color: white;
+    border-style: none;
+}
+
+.div-botao-intuito-pagina button:visited {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-style: none;
 }
 
 
