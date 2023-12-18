@@ -14,17 +14,30 @@
 <body>
 
     <header>
-        <a href="">
-            <img src="img/logo Programadores do amanhã.svg" alt="">
-        </a>
-        <nav>
+ 
+
+        <a href="#" onclick="openLoginModal()">
+            <img id="logo" src="img/logo Programadores do amanhã.svg" alt="">
+          </a>
+          
+          <nav>
             <ul class="nav-list">
-                <li><a href="#" class="active">STUDANT</li>
-                <li><a href="#"><img class="login" src="img/login.png" alt="lala"></a></li>
+              <li onclick="openLoginModal()"><a href="#" class="active">STUDENT</a></li>
+              <li id="logi" onclick="openLoginModal()"><a href="#"><img class="login" src="img/login.png" alt="lala"></a></li>
             </ul>
-
-
-        </nav>
+          </nav>
+          
+          <div id="loginModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeLoginModal()">&times;</span>
+              <form id="login-form">
+                <label class="user" for="username">Username:</label>
+                <input class="input" type="text" id="username" name="username" required>
+                
+                <button type="button" onclick="doLogin()">Enter</button>
+              </form>
+            </div>
+          </div>
     </header>
 
     <section>
@@ -54,7 +67,7 @@
                     <h1 class="headings">ACTIVITIES</h1>
 
 
-                    <button type="button">OPEN</button>
+                    <a href="https://classroom.google.com/?pli=1"><button type="button">OPEN</button></a>
 
                 </main>
 
@@ -67,7 +80,7 @@
                     </div>
                     <h1 class="headings">MESSAGES</h1>
                     <p>
-                        <button type="button">OPEN</button>
+                        <button onclick="openEmailClient()" type="button">OPEN</button>
                     </p>
                 </main>
             </div>
@@ -79,7 +92,7 @@
                     </div>
                     <h1 class="headings">CALLS VIDEO</h1>
                     <p>
-                        <button type="button">OPEN</button>
+                        <button onclick="openZoomApp()" type="button">OPEN</button>
                     </p>
                 </main>
             </div>
@@ -179,6 +192,7 @@
             </div>
         </div>
 
+
     </section>
 
     <footer id="footer-pagina">
@@ -193,6 +207,7 @@
         </div>
     </footer>
 
+<script src="../script.js"></script>
 </body>
 
 </html>
