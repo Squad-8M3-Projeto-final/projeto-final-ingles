@@ -31,15 +31,14 @@ function openLoginModal() {
   
 
       document.querySelector('.nav-list .active').innerText = username;
-  
-      // Fecha o modal
+
       closeLoginModal();
     } else {
       alert('Por favor, insira um nome de usuário.');
     }
   }
   
-  // Fecha o modal se clicar fora da área do modal
+
   window.onclick = function (event) {
     var modal = document.getElementById('loginModal');
     if (event.target == modal) {
